@@ -1,0 +1,28 @@
+<view class='cu-custom'>
+  <view class="cu-bar fixed bg-shadeTop" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">    
+	<view class='content' style='top:{{StatusBar}}px;'>东南大学成贤学院</view>
+  </view>
+</view>
+<view class="logo" style="height:{{CustomBar}}-5000px;padding-top:85px;"> 
+<image class="imgIcon" src="/static/logo.png" mode="scaleToFill" ></image>
+</view>
+<form bindsubmit="clickLogin" bindreset="reset">
+	<view class="cu-form-group margin-top">
+		<view class="title">学号</view>
+		<input type="text"  placeholder="8位学生号" bindinput="usernameInput" name="username"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">密码</view>
+		<input type="password" name="password" placeholder="学生账号密码" bindinput="passwordInput"></input>
+	</view>
+	<view class="padding flex flex-direction">
+  <button class="cu-btn bg-green lg" form-type="submit" >登录</button>
+  <button class="cu-btn bg-red margin-tb-sm lg" form-type="reset" >重置</button>
+</view>
+</form>
+ <view class="page__bd page__bd_spacing">
+        <view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2007-2019 cxxy.seu.edu.cn</view>
+        </view>
+</view>
+

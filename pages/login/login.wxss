@@ -1,0 +1,13 @@
+/* pages/login/login.wxss */
+@import '/weui/weui.wxss';
+
+.logo{
+  display:flex;                   
+  justify-content: center;         
+ 
+}
+.logo image { 
+  width: 400px;
+  height: 320px;
+  }
+

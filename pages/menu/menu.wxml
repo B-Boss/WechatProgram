@@ -1,0 +1,67 @@
+<!-- pages/menu.wxml -->
+<cu-custom bgColor="bg-gradual-blue">
+	<view slot="content">主页</view>
+</cu-custom>
+
+<view class="bg-white padding"> 
+<view class="userinfo" style="padding-top:50px">
+
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+  </view>
+
+
+<view class="page" style="padding-top:50px">
+
+	<view class="page__bd">
+		<view class="weui-grids">
+			<block wx:for="{{grids}}" wx:for-index="grid">
+				<view wx:if="{{grids[grid]==0}}">
+					<navigator url="/pages/chooseRoom/chooseRoom" class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/myDorm.png" />
+						<view class="weui-grid__label">我的宿舍</view>
+					</navigator>
+				</view>
+				<view wx:if="{{grids[grid]==1}}" bindtap="ToElectricityInfo">
+					<navigator class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/ELEC.png" />
+						<view class="weui-grid__label" >查询电费</view>
+						</navigator>
+				</view>
+				<view wx:if="{{grids[grid]==2}}">
+					<navigator url="/pages/myRoom/myRoom" class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/dorm.png" />
+						<view class="weui-grid__label">选择宿舍</view>
+					</navigator>
+				</view>
+				<view wx:if="{{grids[grid]==3}}">
+					<navigator url="/pages/chooseRoom/chooseRoom" class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/KQ.png" />
+						<view class="weui-grid__label">晚间考勤</view>
+					</navigator>
+				</view>
+				<view wx:if="{{grids[grid]==4}}">
+					<navigator url="/pages/ElectricityInfo/ElectricityInfo" class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/PF.png" />
+						<view class="weui-grid__label">宿舍评分</view>
+					</navigator>
+				</view>
+				<view wx:if="{{grids[grid]==5}}">
+					<navigator url="/pages/myRoom/myRoom" class="weui-grid" hover-class="weui-grid_active">
+						<image class="weui-grid__icon" src="/static/images//icon_tabbar.png" />
+						<view class="weui-grid__label">宿舍公告</view>
+					</navigator>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
+
+
+<view class="page__bd page__bd_spacing" style="bottom=0;"style="padding-top:100px">
+	<view class="weui-footer">
+		<view class="weui-footer__text">Copyright © 2007-2019 cxxy.seu.edu.cn</view>
+	</view>
+</view>
+</view>
