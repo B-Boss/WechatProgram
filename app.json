@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/menu/menu",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/chooseRoom/chooseRoom",
+    "pages/myRoom/myRoom",
+    "pages/ElectricityInfo/ElectricityInfo",
+    "pages/chooseRoom/chooseBed"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
