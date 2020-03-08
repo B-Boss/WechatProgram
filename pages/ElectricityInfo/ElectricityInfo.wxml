@@ -38,12 +38,8 @@
 		<button class="cu-btn lines-black round shadow" style="width:100px" form-type="submit">查询</button>
 	</view>
 </form>
-<canvas  canvas-id="searchCanvas" disable-scroll="true" class="canvas1"></canvas>
+<canvas  canvas-id="searchCanvas" disable-scroll="true" class="canvas1"
+bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" disable-scroll="true" ></canvas>
 
-<!-- <scroll-view class="temp_day_box" scroll-x>
-  <view class="canvas_height">
-     <image class="canvas_img" src='{{canvasSaveimg}}'></image>
-  </view>
-</scroll-view>
-<canvas canvas-id="searchCanvas" class="canvasHigh" disable-scroll="true" ></canvas> -->
+
 

@@ -204,6 +204,7 @@ Page({
             animation: true,
             dataLabel: true,
             categories: categories,
+            enableScroll: true, //配置该折线图可滑动
             series: [{
               name: '每日用电量',
               color: '#000', //柱子的颜色
@@ -243,21 +244,26 @@ Page({
             width:  (385 * windowW), //图表展示内容宽度
             height: 300 //图表展示内容高度
           })
-          // that.onShow();
-
-          
-
         } else {
           wx.showToast({
             title: '未查到相关信息',
             duration: 2000
           })
         }
-       
       }
-
     })
-  }
+  },
+  touchstart:function(e){ 
+    searchCanvas.scrollStart(e);//开始滚动
+    },
+    
+    touchmove:function(e){  
+     searchCanvas.scroll(e);   
+    },
+    
+    touchend:function(e){
+     searchCanvas.scrollEnd(e);
+    }
 
 
 
