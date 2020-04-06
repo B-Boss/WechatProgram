@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/login/login",
     "pages/menu/menu",
     "pages/logs/logs",
@@ -7,8 +8,22 @@
     "pages/chooseRoom/chooseRoom",
     "pages/myRoom/myRoom",
     "pages/ElectricityInfo/ElectricityInfo",
-    "pages/chooseRoom/chooseBed"
+    "pages/chooseRoom/chooseBed",
+    "pages/RoomPoints/RoomPoints",
+    "pages/dormMaster/adminMenu",
+    "pages/dormMaster/selectFloor",
+    "pages/dormMaster/giveScore",
+    "pages/dormMaster/sendNotice",
+    "pages/dormNotice/dormNotice",
+    "pages/dormMaster/dailyAttendance",
+
+    "pages/attendance/attendance"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
     "navigationBarTitleText": "Color UI",
