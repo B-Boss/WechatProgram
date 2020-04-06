@@ -1,0 +1,13 @@
+<view class='cu-custom'>
+	<view class="cu-bar fixed bg-shadeTop" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+		<navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+			<text class='cuIcon-back'></text> 返回
+		</navigator>
+		<view class='content' style='top:{{StatusBar}}px;'>晚间考勤</view>
+	</view>
+</view>
+
+
+<view class="userinfo" style="padding-top:500px">
+			<button bindtap='getLocation'>获取定位</button>
+</view>
