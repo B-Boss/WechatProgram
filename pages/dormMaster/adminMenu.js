@@ -13,6 +13,7 @@ Page({
       color: 'red',
       badge: 120,
       name: '宿舍考勤',
+      url:'/pages/dormMaster/dailyAttendance'
     }, {
       icon: 'recordfill',
       color: 'orange',
