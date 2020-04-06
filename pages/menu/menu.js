@@ -22,17 +22,17 @@ Page({
     /**
      * 获取用户信息
      */
-    wx.getUserInfo({
-      success:function(res){
-        console.log(res);
-        var avatarUrl = 'userInfo.avatarUrl';
-        var nickName = 'userInfo.nickName';
-        that.setData({
-          [avatarUrl]: res.userInfo.avatarUrl,
-          [nickName]:res.userInfo.nickName,
-        })
-      }
-    })
+    // wx.getUserInfo({
+    //   success:function(res){
+    //     console.log(res);
+    //     var avatarUrl = 'userInfo.avatarUrl';
+    //     var nickName = 'userInfo.nickName';
+    //     that.setData({
+    //       [avatarUrl]: res.userInfo.avatarUrl,
+    //       [nickName]:res.userInfo.nickName,
+    //     })
+    //   }
+    // })
 
   this.data.userId=app.globalData.userId
   wx.setStorage({

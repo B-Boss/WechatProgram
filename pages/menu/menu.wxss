@@ -6,11 +6,12 @@
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
   margin: 20rpx;
   border-radius: 50%;
+  clip-path: circle(100rpx at center);
 }
 
 .userinfo-nickname {
